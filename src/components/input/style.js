@@ -3,24 +3,25 @@ import styled from "styled-components";
 import TextField from "@material-ui/core/TextField";
 
 export const StyledTextField = styled(TextField)`
+  border-radius: 5 !important;
   margin: 5px 0 !important;
   .MuiInputLabel-root {
-    color: #868686;
+    color: #707070;
   }
 
   .MuiInputBase-input {
-    color: #868686;
+    color: #707070;
   }
 
   .MuiOutlinedInput-root {
     fieldset {
-      border-color: #868686;
+      border-color: #707070;
     }
     &:hover fieldset {
-      border-color: #f50057;
+      border-color: #ff3366;
     }
     &.Mui-focused fieldset {
-      border-color: #f50057;
+      border-color: #ff3366;
     }
   }
 `;

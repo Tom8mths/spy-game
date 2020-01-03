@@ -1,17 +1,22 @@
 import React, { Component } from "react";
 
 import Input from "../../components/input";
-
-import Button from "@material-ui/core/Button";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import StyledButton from "../../components/buttons";
 
 import logo from "../../logo.svg";
 
 import "../../App.scss";
-import { Wrapper, Container, Text, Form } from "./loginStyle";
+import {
+  Wrapper,
+  Container,
+  Title,
+  Form,
+  Link,
+  MiniWrapper,
+  Text
+} from "./loginStyle";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faKey } from "@fortawesome/free-solid-svg-icons";
 
 class loginPage extends Component {
   state = {};
@@ -22,8 +27,8 @@ class loginPage extends Component {
         <Container>
           <Wrapper>
             <img src={logo} className="App-logo" alt="logo" />
-            <Text>Já tem uma conta?</Text>
             <Form>
+              <Title>Já tem uma conta?</Title>
               <Input
                 label="Nome de usuário ou e-mail"
                 required
@@ -38,10 +43,14 @@ class loginPage extends Component {
                 variant="outlined"
                 type="password"
               />
+              <StyledButton variant="contained" text="Entrar"></StyledButton>
+              <MiniWrapper>
+                <Link>Não tem uma conta? Cadastre-se</Link>
+                <Link>Esqueci minha senha</Link>
+              </MiniWrapper>
+              <Text>ou acesse como</Text>
+              <StyledButton variant="contained" text="Visitante"></StyledButton>
             </Form>
-            <Button variant="contained" color="secondary">
-              Secondary
-            </Button>
           </Wrapper>
         </Container>
       </div>
