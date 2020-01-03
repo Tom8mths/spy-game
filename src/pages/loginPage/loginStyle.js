@@ -17,7 +17,19 @@ export const Wrapper = styled.div`
 `;
 
 export const Text = styled.h5`
-  text-align: left;
-  color: $white;
   margin-bottom: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  margin: 0 auto;
+  @media screen and (max-width: 345px) {
+    width: 90%;
+  }
 `;

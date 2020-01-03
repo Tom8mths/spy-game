@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-import Input from "@material-ui/core/Input";
+import Input from "../../components/input";
+
 import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 
 import logo from "../../logo.svg";
 
 import "../../App.scss";
-import { Wrapper, Container, Text } from "./loginStyle";
+import { Wrapper, Container, Text, Form } from "./loginStyle";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faKey } from "@fortawesome/free-solid-svg-icons";
@@ -23,20 +23,22 @@ class loginPage extends Component {
           <Wrapper>
             <img src={logo} className="App-logo" alt="logo" />
             <Text>Já tem uma conta?</Text>
-            <form noValidate autoComplete="off">
-              <TextField
-                id="outlined-basic"
-                label="Outlined"
+            <Form>
+              <Input
+                label="Nome de usuário ou e-mail"
+                required
+                maxLength={200}
                 variant="outlined"
+                type="text"
               />
-              <TextField
-                id="outlined-password-input"
-                label="Password"
+              <Input
+                label="Senha"
+                required
+                maxLength={200}
+                variant="outlined"
                 type="password"
-                autoComplete="current-password"
-                variant="outlined"
               />
-            </form>
+            </Form>
             <Button variant="contained" color="secondary">
               Secondary
             </Button>
