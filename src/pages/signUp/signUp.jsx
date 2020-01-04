@@ -14,7 +14,7 @@ import {
   Link,
   MiniWrapper,
   Text
-} from "./loginStyle";
+} from "./style";
 
 class loginPage extends Component {
   state = {};
@@ -26,9 +26,16 @@ class loginPage extends Component {
           <Wrapper>
             <img src={logo} className="App-logo" alt="logo" />
             <Form>
-              <Title>Já tem uma conta?</Title>
+              <Title>Cadastrar</Title>
               <Input
-                label="Nome de usuário ou e-mail"
+                label="Nome de usuário"
+                required
+                maxLength={200}
+                variant="outlined"
+                type="text"
+              />
+              <Input
+                label="E-mail"
                 required
                 maxLength={200}
                 variant="outlined"
@@ -41,9 +48,9 @@ class loginPage extends Component {
                 variant="outlined"
                 type="password"
               />
-              <StyledButton variant="contained" text="Entrar"></StyledButton>
+              <StyledButton variant="contained" text="Cadastrar"></StyledButton>
               <MiniWrapper>
-                <Link>Não tem uma conta? Cadastre-se</Link>
+                <Link>Já possuo uma conta</Link>
                 <Link>Esqueci minha senha</Link>
               </MiniWrapper>
               <Text>ou acesse como</Text>

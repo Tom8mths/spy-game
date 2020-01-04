@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// @import "../../Variables.scss";
-
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -16,28 +14,19 @@ export const Wrapper = styled.div`
   height: inherit;
 `;
 
-export const MiniWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #3d384e;
-  margin-top: 10px;
-`;
-
 export const Title = styled.h5`
-  margin-bottom: 15px;
   text-align: left;
   font-size: 20px;
-  font-weight: 100;
-  color: #fff;
+  font-weight: 500;
+  color: #ff3366;
 `;
 
 export const Text = styled.h5`
   margin: 15px 0;
-  text-align: center;
+  text-align: left;
   font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #fff;
+  font-weight: 100;
+  color: #707070;
 `;
 
 export const Form = styled.form`
@@ -50,14 +39,12 @@ export const Form = styled.form`
   }
 `;
 
-export const Link = styled.p`
-  color: #ff3366;
+export const Link = styled.h5`
+  margin: 15px 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #afafaf;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 100;
-  margin-bottom: 10px;
-  &:hover {
-    color: #c93058;
-    transition: 250ms all;
-  }
 `;
