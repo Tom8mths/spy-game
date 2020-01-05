@@ -11,7 +11,7 @@ import {
   Container,
   Title,
   Form,
-  Link,
+  Redirect,
   MiniWrapper,
   Text
 } from "./style";
@@ -50,8 +50,8 @@ class loginPage extends Component {
               />
               <StyledButton variant="contained" text="Cadastrar"></StyledButton>
               <MiniWrapper>
-                <Link>Já possuo uma conta</Link>
-                <Link>Esqueci minha senha</Link>
+                <Redirect to="/login">Já possuo uma conta</Redirect>
+                <Redirect to="/forgot_password">Esqueci minha senha</Redirect>
               </MiniWrapper>
               <Text>ou acesse como</Text>
               <StyledButton variant="contained" text="Visitante"></StyledButton>

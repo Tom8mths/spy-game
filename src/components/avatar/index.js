@@ -24,7 +24,7 @@ const SmallAvatar = withStyles(theme => ({
   root: {
     width: 50,
     height: 50,
-    border: `2px solid ${theme.palette.background.paper}`
+    border: `2px solid #262332`
   }
 }))(Avatar);
 
@@ -36,7 +36,7 @@ export default function BadgeAvatars() {
       <Badge
         overlap="circle"
         anchorOrigin={{
-          vertical: "bottom",
+          vertical: "top",
           horizontal: "right"
         }}
         badgeContent={

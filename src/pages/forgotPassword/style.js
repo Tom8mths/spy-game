@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -39,7 +41,7 @@ export const Form = styled.form`
   }
 `;
 
-export const Link = styled.h5`
+export const Redirect = styled(Link)`
   margin: 15px 0;
   text-align: center;
   font-size: 15px;

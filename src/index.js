@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import LoginPage from "./pages/loginPage/loginPage";
-import ForgotPassword from "./pages/forgotPassword/forgotPassword";
-import SignUp from "./pages/signUp/signUp";
-import GamesSection from "./pages/gamesSection/gamesSection";
+import Login from "./pages/loginPage/login";
+import ForgotPassword from "./pages/forgotPassword/forgot_password";
+import SignUp from "./pages/signUp/signup";
+import Home from "./pages/gamesSection/home";
 
-ReactDOM.render(<GamesSection />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

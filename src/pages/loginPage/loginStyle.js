@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// @import "../../Variables.scss";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100vw;
@@ -50,7 +50,7 @@ export const Form = styled.form`
   }
 `;
 
-export const Link = styled.p`
+export const Redirect = styled(Link)`
   color: #ff3366;
   cursor: pointer;
   font-size: 14px;

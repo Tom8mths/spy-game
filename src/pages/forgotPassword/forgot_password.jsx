@@ -6,7 +6,7 @@ import StyledButton from "../../components/buttons";
 import logo from "../../logo.svg";
 
 import "../../App.scss";
-import { Wrapper, Container, Title, Form, Link, Text } from "./style";
+import { Wrapper, Container, Title, Form, Redirect, Text } from "./style";
 
 class loginPage extends Component {
   state = {};
@@ -31,7 +31,7 @@ class loginPage extends Component {
                 type="text"
               />
               <StyledButton variant="contained" text="Enviar"></StyledButton>
-              <Link>Já tenho uma conta</Link>
+              <Redirect to="/login">Já tenho uma conta</Redirect>
             </Form>
           </Wrapper>
         </Container>

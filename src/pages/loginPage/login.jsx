@@ -11,7 +11,7 @@ import {
   Container,
   Title,
   Form,
-  Link,
+  Redirect,
   MiniWrapper,
   Text
 } from "./loginStyle";
@@ -43,11 +43,15 @@ class loginPage extends Component {
               />
               <StyledButton variant="contained" text="Entrar"></StyledButton>
               <MiniWrapper>
-                <Link>Não tem uma conta? Cadastre-se</Link>
-                <Link>Esqueci minha senha</Link>
+                <Redirect to="/signup">Não tem uma conta? Cadastre-se</Redirect>
+                <Redirect to="/forgot_password">Esqueci minha senha</Redirect>
               </MiniWrapper>
               <Text>ou acesse como</Text>
-              <StyledButton variant="contained" text="Visitante"></StyledButton>
+              <StyledButton
+                variant="contained"
+                to="/"
+                text="Visitante"
+              ></StyledButton>
             </Form>
           </Wrapper>
         </Container>
