@@ -25,19 +25,21 @@ class loginPage extends Component {
         <Container>
           <Wrapper>
             <Head>
-              <BadgeAvatars></BadgeAvatars>
-              <div>
-                <Input
-                  autoComplete="off"
-                  variant="standard"
-                  type="text"
-                  defaultValue="Hello world"
-                  inputProps={{ "aria-label": "description" }}
-                />
-                <Redirect className="exit" to="/login">
-                  <FontAwesomeIcon icon={faSignOutAlt} />
-                  <span>Sair</span>
-                </Redirect>
+              <div className="left">
+                <BadgeAvatars></BadgeAvatars>
+                <div>
+                  <Input
+                    autoComplete="off"
+                    variant="standard"
+                    type="text"
+                    defaultValue="Hello world"
+                    inputProps={{ "aria-label": "description" }}
+                  />
+                  <Redirect className="exit" to="/login">
+                    <FontAwesomeIcon icon={faSignOutAlt} />
+                    <span>Sair</span>
+                  </Redirect>
+                </div>
               </div>
               <div className="right-menu">
                 <FontAwesomeIcon icon={faCogs} />

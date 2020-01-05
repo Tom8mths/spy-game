@@ -24,10 +24,13 @@ export const Wrapper = styled.div`
 
 export const Head = styled.div`
   display: flex;
-  background-color: red;
-  align-items: center;
+  align-items: flex-start;
+  .left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
   div {
-    background-color: blue;
     display: block;
     text-align: left;
     color: #ff3366;
@@ -41,9 +44,6 @@ export const Head = styled.div`
     }
   }
   .right-menu {
-    display: inline-block;
-    float: right;
-    width: auto;
     color: #ff3366;
     cursor: pointer;
     font-size: 25px;
