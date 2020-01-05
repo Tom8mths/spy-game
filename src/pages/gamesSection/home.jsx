@@ -43,19 +43,22 @@ class loginPage extends Component {
               </div>
               <div className="right-menu">
                 <FontAwesomeIcon icon={faCogs} />
-                <span>Opções</span>
               </div>
             </Head>
-            <Head>
-              <h2>Jogos</h2>
-              <FontAwesomeIcon icon={faSearch} />
-              <Input
-                noValidate
-                autoComplete="off"
-                label="Procurar"
-                variant="standard"
-                type="search"
-              />
+            <Head className="line">
+              <div className="title">
+                <h2>Jogos</h2>
+              </div>
+              <div className="search">
+                <FontAwesomeIcon className="icon" icon={faSearch} />
+                <Input
+                  noValidate
+                  autoComplete="off"
+                  label="Procurar"
+                  variant="standard"
+                  type="search"
+                />
+              </div>
             </Head>
           </Wrapper>
         </Container>

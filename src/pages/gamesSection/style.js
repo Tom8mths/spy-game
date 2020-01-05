@@ -17,6 +17,9 @@ export const Wrapper = styled.div`
   background-color: #262332;
   width: 70%;
   margin: 0 auto;
+  .line {
+    border-bottom: 0.1px solid #474358;
+  }
   @media screen and (max-width: 425px) {
     width: 90%;
   }
@@ -47,6 +50,39 @@ export const Head = styled.div`
     color: #ff3366;
     cursor: pointer;
     font-size: 25px;
+  }
+  .title {
+    flex: 1;
+    color: #fff;
+    h2 {
+      position: relative;
+      margin-top: 22px;
+      font-weight: 100;
+      text-transform: uppercase;
+      width: 100px;
+      @media screen and (max-width: 434px) {
+        font-size: 20px;
+        margin-top: 35px;
+        width: 80px;
+      }
+      &::after {
+        content: "";
+        border-bottom: 1px solid #fff;
+        display: block;
+        width: 100%;
+        height: auto;
+        background: white;
+        position: absolute;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    .icon {
+      margin: 15px 10px 0 0;
+    }
   }
 `;
 
