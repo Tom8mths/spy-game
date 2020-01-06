@@ -105,33 +105,28 @@ export const Redirect = styled(Link)`
 `;
 
 export const GamesList = styled.div`
-  width: 100%;
+  width: 50%;
   margin-right: 10px;
   height: 500px;
   background-color: #201d2a;
-  display: flex;
-  flex-wrap: wrap;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  @media screen and (max-width: 750px) {
+    margin-right: 0;
+    height: 250px;
+    margin-top: 20px;
+    width: 100%;
+  }
 `;
 
-export const GamesBox = styled.div`
-  background-color: red;
-  width: 260px;
-  height: 150px;
-  box-shadow: 2px 2px 8px #000;
-  margin: 20px;
-  transition: all 250ms ease-in-out;
-  cursor: pointer;
-  &:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    box-shadow: 4px 4px 8px #000;
-  }
-  @media screen and (max-width: 400px) {
-    width: 210px;
-    height: 110px;
+export const RoomInfo = styled.div`
+  width: 50%;
+  margin-left: 10px;
+  height: 500px;
+  background-color: #201d2a;
+  @media screen and (max-width: 750px) {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
   }
 `;
 
@@ -141,12 +136,5 @@ export const Center = styled.div`
   justify-content: center;
   @media screen and (max-width: 750px) {
     display: block;
-  }
-`;
-
-export const Game = styled.div`
-  display: block;
-  span {
-    color: #fff;
   }
 `;

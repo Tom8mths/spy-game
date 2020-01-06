@@ -10,9 +10,8 @@ import {
   Head,
   Redirect,
   GamesList,
-  GamesBox,
-  Center,
-  Game
+  RoomInfo,
+  Center
 } from "./style";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -69,28 +68,20 @@ class loginPage extends Component {
               </div>
             </Head>
             <Center>
-              <GamesList>
-                <Game>
-                  <GamesBox></GamesBox>
-                  <span>Título do jogo</span>
-                </Game>
-                <Game>
-                  <GamesBox></GamesBox>
-                  <span>Título do jogo</span>
-                </Game>
-                <Game>
-                  <GamesBox></GamesBox>
-                  <span>Título do jogo</span>
-                </Game>
-                <Game>
-                  <GamesBox></GamesBox>
-                  <span>Título do jogo</span>
-                </Game>
-                <Game>
-                  <GamesBox></GamesBox>
-                  <span>Título do jogo</span>
-                </Game>
-              </GamesList>
+              <GamesList></GamesList>
+              <RoomInfo></RoomInfo>
+            </Center>
+            <Center>
+              <StyledButton
+                variant="contained"
+                to="/"
+                text="Criar Sala"
+              ></StyledButton>
+              <StyledButton
+                variant="contained"
+                to="/"
+                text="Entrar"
+              ></StyledButton>
             </Center>
           </Wrapper>
         </Container>
