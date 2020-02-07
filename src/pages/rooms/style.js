@@ -153,22 +153,23 @@ export const RoomInfo = styled.div`
   height: 500px;
   background-color: #201d2a;
   color: #373247;
-  h1 {
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 20px;
-  }
-  .icon {
-    margin: 20px;
-    width: 100px;
-    height: 100px;
-  }
-  p {
-    margin: 20px;
-    font-size: 25px;
-  }
+  user-select: none;
   .information {
     margin-top: 70px;
+    h1 {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 20px;
+    }
+    p {
+      margin: 20px;
+      font-size: 25px;
+    }
+    .icon {
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   @media screen and (max-width: 750px) {
@@ -176,6 +177,21 @@ export const RoomInfo = styled.div`
     margin-top: 20px;
     width: 100%;
     height: 250px;
+    .information {
+      margin-top: 0;
+      h1 {
+        font-size: 25px;
+      }
+      .icon {
+        margin: 0;
+        width: 75px;
+        height: 75px;
+      }
+      p {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
   }
 `;
 
@@ -211,5 +227,9 @@ export const Room = styled.div`
     border: 2px solid grey;
     border-radius: 12px;
     margin: 0 auto;
+    .icon {
+      width: 13px;
+      height: 13px;
+    }
   }
 `;
