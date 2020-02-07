@@ -115,26 +115,6 @@ export const GamesList = styled.div`
   overflow-x: hidden;
 `;
 
-export const GamesBox = styled.div`
-  background-color: red;
-  width: 260px;
-  height: 150px;
-  box-shadow: 2px 2px 8px #000;
-  margin: 20px;
-  transition: all 250ms ease-in-out;
-  cursor: pointer;
-  &:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    box-shadow: 4px 4px 8px #000;
-  }
-  @media screen and (max-width: 400px) {
-    width: 210px;
-    height: 110px;
-  }
-`;
-
 export const Center = styled.div`
   display: flex;
   margin-top: 20px;

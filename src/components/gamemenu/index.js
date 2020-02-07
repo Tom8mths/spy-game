@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, GameBox } from "./style";
+import { Menu, GameBox, Redirect } from "./style";
 import StyledButton from "../../components/buttons";
 
 class MenuDropdown extends Component {
@@ -51,6 +51,7 @@ class MenuDropdown extends Component {
                 to="/"
                 text="Criar Sala"
               ></StyledButton>
+              <Redirect to="/rooms">A</Redirect>
               <StyledButton
                 variant="contained"
                 to="/"

@@ -1,5 +1,7 @@
 import Styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 export const Menu = Styled.div`
 width: 300px;
 `;
@@ -21,5 +23,17 @@ export const GameBox = Styled.div`
   @media screen and (max-width: 400px) {
     width: 210px;
     height: 110px;
+  }
+`;
+
+export const Redirect = Styled(Link)`
+  color: #ff3366;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  &:hover {
+    color: #c93058;
+    transition: 250ms all;
   }
 `;

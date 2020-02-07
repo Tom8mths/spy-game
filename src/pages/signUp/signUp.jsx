@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 
 import Input from "../../components/input";
@@ -31,7 +30,6 @@ class loginPage extends Component {
               <Input
                 label="Nome de usuário"
                 required
-                maxLength={200}
                 variant="outlined"
                 type="text"
               />

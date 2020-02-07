@@ -82,6 +82,32 @@ export const Head = styled.div`
       }
     }
   }
+  .title-info {
+    flex: 0.61;
+    color: #fff;
+    h2 {
+      position: relative;
+      margin-top: 25px;
+      font-weight: 100;
+      text-transform: uppercase;
+      width: 200px;
+      @media screen and (max-width: 434px) {
+        font-size: 20px;
+        margin-top: 30px;
+        width: 80px;
+        text-transform: uppercase;
+      }
+      &::after {
+        content: "";
+        border-bottom: 1px solid #fff;
+        display: block;
+        width: 100%;
+        height: auto;
+        background: white;
+        position: absolute;
+      }
+    }
+  }
   .search {
     display: flex;
     align-items: center;
@@ -105,10 +131,14 @@ export const Redirect = styled(Link)`
 `;
 
 export const GamesList = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 50%;
   margin-right: 10px;
-  height: 500px;
   background-color: #201d2a;
+  overflow-y: scroll;
+  height: 500px;
   @media screen and (max-width: 750px) {
     margin-right: 0;
     height: 250px;
@@ -122,6 +152,25 @@ export const RoomInfo = styled.div`
   margin-left: 10px;
   height: 500px;
   background-color: #201d2a;
+  color: #373247;
+  h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px;
+  }
+  .icon {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  p {
+    margin: 20px;
+    font-size: 25px;
+  }
+  .information {
+    margin-top: 70px;
+  }
+
   @media screen and (max-width: 750px) {
     margin-left: 0;
     margin-top: 20px;
@@ -136,5 +185,31 @@ export const Center = styled.div`
   justify-content: center;
   @media screen and (max-width: 750px) {
     display: block;
+  }
+`;
+
+export const Room = styled.div`
+  background-color: #ff3366;
+  width: 161px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 100px;
+  cursor: pointer;
+  user-select: none;
+  .test {
+    display: block;
+  }
+  .test2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  span {
+    background-color: grey;
+    width: 80%;
+    border: 2px solid grey;
+    border-radius: 12px;
+    margin: 0 auto;
   }
 `;

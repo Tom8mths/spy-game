@@ -11,19 +11,24 @@ import {
   Redirect,
   GamesList,
   RoomInfo,
-  Center
+  Center,
+  Room
 } from "./style";
-
-import { makeStyles } from "@material-ui/core/styles";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSignOutAlt,
   faCog,
-  faSearch
+  faSearch,
+  faUsers,
+  faBook,
+  faUndoAlt,
+  faLock,
+  faInfoCircle
 } from "@fortawesome/free-solid-svg-icons";
+import Tooltip from "@material-ui/core/Tooltip";
 
-class loginPage extends Component {
+class Rooms extends Component {
   state = {};
 
   render() {
@@ -54,7 +59,7 @@ class loginPage extends Component {
             </Head>
             <Head className="line">
               <div className="title">
-                <h2>Jogos</h2>
+                <h2>Salas</h2>
               </div>
               <div className="search">
                 <FontAwesomeIcon className="icon" icon={faSearch} />
@@ -68,8 +73,53 @@ class loginPage extends Component {
               </div>
             </Head>
             <Center>
-              <GamesList></GamesList>
-              <RoomInfo></RoomInfo>
+              <GamesList>
+                <Room>
+                  <h3>Sala 123</h3>
+                  <div className="test2">
+                    <div className="test">
+                      <Tooltip title="Add" placement="top">
+                        <FontAwesomeIcon className="icon" icon={faUsers} />
+                      </Tooltip>
+                      <p>10/10</p>
+                    </div>
+                    <div className="test">
+                      <FontAwesomeIcon className="icon" icon={faBook} />
+                      <p>10</p>
+                    </div>
+                    <div className="test">
+                      <FontAwesomeIcon className="icon" icon={faUndoAlt} />
+                      <p>10/10</p>
+                    </div>
+                  </div>
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon className="icon" icon={faLock} /> com senha
+                  </span>
+                </Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+                <Room></Room>
+              </GamesList>
+              <RoomInfo>
+                <div className="information">
+                  <h1>Informações da Sala</h1>
+                  <FontAwesomeIcon className="icon" icon={faInfoCircle} />
+                  <p>
+                    Selecione uma das salas ao lado para vizualizar suas
+                    informações
+                  </p>
+                </div>
+              </RoomInfo>
             </Center>
             <Center>
               <StyledButton
@@ -90,4 +140,4 @@ class loginPage extends Component {
   }
 }
 
-export default loginPage;
+export default Rooms;
